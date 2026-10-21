@@ -67,11 +67,20 @@
 
   <footer><div class="foot"><div><strong>Banco Demo</strong><br><br>Página criada exclusivamente para demonstração.</div><div>Particulares · Empresas · Ajuda · Contactos</div><div>Privacidade · Cookies · Segurança</div></div></footer>
 
-  <!-- ============================================================
-       GENESYS WEB MESSENGER
-       Cole o snippet do deployment Genesys Cloud AQUI, imediatamente
-       antes do fecho de </body>.
-       ============================================================ -->
+  <<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.ie/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-euw1',
+    deploymentId: '53cd408f-b175-49c6-be2a-e297f324c544'
+  });
+</script>>
 
   <div class="placeholder" title="Posição aproximada do Web Messenger">💬</div>
 </body>
