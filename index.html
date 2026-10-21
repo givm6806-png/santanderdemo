@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco Demo | Particulares</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:#fff} a{text-decoration:none;color:inherit}
+    .demo{background:#222;color:#fff;text-align:center;padding:7px;font-size:12px}.top{height:42px;background:#ec0000;color:#fff;display:flex;justify-content:flex-end;align-items:center;padding:0 6%;gap:24px;font-size:13px}
+    header{background:#fff;box-shadow:0 2px 7px rgba(0,0,0,.12);position:relative;z-index:2}.mainnav{height:76px;display:flex;align-items:center;max-width:1180px;margin:auto;padding:0 20px;gap:36px}.brand{font-weight:700;font-size:25px;color:#ec0000;display:flex;align-items:center;gap:9px}.flame{font-size:31px}.navlinks{display:flex;gap:25px;font-size:14px;flex:1}.actions{display:flex;gap:12px}.btn{border-radius:24px;padding:11px 20px;font-weight:700;font-size:13px;border:1px solid #ec0000}.outline{color:#ec0000;background:#fff}.solid{background:#ec0000;color:#fff}
+    .hero{background:#f4f5f6;min-height:430px;display:flex;align-items:center}.hero-inner{width:100%;max-width:1180px;margin:auto;padding:54px 20px;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}.eyebrow{font-size:15px;margin-bottom:12px}.hero h1{font-size:44px;line-height:1.08;margin:0 0 20px;max-width:610px}.hero p{font-size:19px;line-height:1.5;max-width:590px;color:#444}.hero-card{height:300px;border-radius:8px;background:linear-gradient(135deg,#ffd3d3,#fff 55%,#f4b5b5);position:relative;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.1)}.hero-card:before{content:'€';position:absolute;font-size:220px;font-weight:bold;color:rgba(236,0,0,.11);right:35px;top:18px}.hero-card .mini{position:absolute;bottom:28px;left:30px;background:#fff;padding:18px 22px;border-radius:8px;box-shadow:0 5px 15px rgba(0,0,0,.12);font-weight:700}
+    section{padding:58px 20px}.container{max-width:1180px;margin:auto}h2{font-size:30px;margin:0 0 30px}.quick{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.quick div{border:1px solid #ddd;border-radius:8px;padding:24px 14px;text-align:center;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.04)}.icon{font-size:27px;color:#ec0000;margin-bottom:12px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{border:1px solid #e0e0e0;border-radius:9px;overflow:hidden;background:#fff}.visual{height:150px;background:linear-gradient(145deg,#f5dada,#fafafa);display:flex;align-items:center;justify-content:center;font-size:55px}.card-body{padding:22px}.card h3{margin:0 0 10px;font-size:21px}.card p{color:#555;line-height:1.45}.link{color:#ec0000;font-weight:700}.grey{background:#f5f6f7}.help{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}.helpbox{background:#fff;padding:30px;border-radius:8px;box-shadow:0 3px 14px rgba(0,0,0,.08)}.search{display:flex;border:1px solid #aaa;border-radius:4px;overflow:hidden}.search input{padding:15px;border:0;flex:1;font-size:15px}.search button{border:0;background:#ec0000;color:white;padding:0 22px;font-weight:bold}.notice{background:#fff3f3;border-left:4px solid #ec0000;padding:20px;line-height:1.5}footer{background:#222;color:#eee;padding:38px 20px}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:30px;font-size:13px;color:#ccc}.placeholder{position:fixed;right:22px;bottom:22px;width:64px;height:64px;border-radius:50%;background:#ec0000;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 5px 20px rgba(0,0,0,.25);opacity:.28}.placeholder:after{content:'Widget';position:absolute;right:72px;background:#333;color:#fff;padding:6px 9px;border-radius:4px;font-size:11px;white-space:nowrap}
+    @media(max-width:800px){.navlinks{display:none}.hero-inner,.help{grid-template-columns:1fr}.hero h1{font-size:34px}.quick{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}.top{display:none}.actions .outline{display:none}.mainnav{height:68px}.foot{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="demo">PÁGINA DEMONSTRATIVA — não é um website oficial do Santander</div>
+  <div class="top"><span>Ajuda</span><span>Pesquisar</span><span>Entrar no NetBanco</span></div>
+  <header>
+    <div class="mainnav">
+      <div class="brand"><span class="flame">◉</span><span>Santander <small style="font-size:10px;color:#777">DEMO</small></span></div>
+      <nav class="navlinks"><a href="#">Contas</a><a href="#">Cartões</a><a href="#">Créditos</a><a href="#">Poupança</a><a href="#">Seguros</a><a href="#">Ajuda</a></nav>
+      <div class="actions"><a class="btn outline" href="#">Sou cliente</a><a class="btn solid" href="#">Abrir conta</a></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Soluções para o seu dia a dia</div>
+          <h1>Um banco simples, digital e próximo de si</h1>
+          <p>Descubra soluções para gerir a sua conta, poupar, financiar os seus projetos e esclarecer dúvidas de forma rápida.</p>
+          <a href="#" class="btn solid" style="display:inline-block;margin-top:10px">Conhecer soluções</a>
+        </div>
+        <div class="hero-card"><div class="mini">Faça uma simulação em poucos minutos</div></div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h2>O que precisa de fazer?</h2>
+        <div class="quick">
+          <div><div class="icon">⌂</div>Crédito Habitação</div><div><div class="icon">€</div>Crédito Pessoal</div><div><div class="icon">▣</div>Cartões</div><div><div class="icon">↗</div>Poupar e investir</div><div><div class="icon">?</div>Preciso de ajuda</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grey">
+      <div class="container">
+        <h2>Em destaque</h2>
+        <div class="cards">
+          <article class="card"><div class="visual">🏠</div><div class="card-body"><h3>A casa certa para si</h3><p>Explore uma experiência simples para simular uma solução de crédito habitação.</p><a class="link" href="#">Simular agora →</a></div></article>
+          <article class="card"><div class="visual">💳</div><div class="card-body"><h3>Conta para o dia a dia</h3><p>Tenha acesso digital à sua conta e às operações que utiliza com maior frequência.</p><a class="link" href="#">Conhecer conta →</a></div></article>
+          <article class="card"><div class="visual">📱</div><div class="card-body"><h3>Banco no telemóvel</h3><p>Consulte movimentos, faça pagamentos e acompanhe a sua vida financeira onde estiver.</p><a class="link" href="#">Explorar app →</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container help">
+        <div><h2>Em que podemos ajudar?</h2><p style="font-size:18px;color:#555;line-height:1.55">Use esta área durante a demo para simular um cliente que procura informação antes de iniciar uma conversa no Web Messenger.</p><div class="notice"><strong>Exemplo:</strong> “Preciso de ajuda com o meu cartão”, “Quero saber mais sobre crédito habitação” ou “Como posso atualizar os meus dados?”</div></div>
+        <div class="helpbox"><h3>Pesquisar ajuda</h3><div class="search"><input placeholder="Escreva a sua dúvida"><button>Pesquisar</button></div><p style="color:#666;font-size:13px">Pesquisa meramente demonstrativa.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="foot"><div><strong>Banco Demo</strong><br><br>Página criada exclusivamente para demonstração.</div><div>Particulares · Empresas · Ajuda · Contactos</div><div>Privacidade · Cookies · Segurança</div></div></footer>
+
+  <!-- ============================================================
+       GENESYS WEB MESSENGER
+       Cole o snippet do deployment Genesys Cloud AQUI, imediatamente
+       antes do fecho de </body>.
+       ============================================================ -->
+
+  <div class="placeholder" title="Posição aproximada do Web Messenger">💬</div>
+</body>
+</html>
